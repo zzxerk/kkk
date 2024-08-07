@@ -529,9 +529,8 @@ body {
 }
 
 .film--date--inner {
-  padding-top: 24px;
-  overflow-x: scroll;
-  scrollbar-color:  hsl(0 0% 50%);
+  padding: 24px 0;
+  overflow-x: auto;
   max-width: 393px;
   /* padding-bottom: 4px; */
 }
