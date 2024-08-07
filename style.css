@@ -533,6 +533,7 @@ body {
   overflow-x: scroll;
   scrollbar-color:  hsl(0 0% 50%);
   max-width: 393px;
+  padding-bottom: 4px;
 }
 
 .film--date--wrapper {
