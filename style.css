@@ -17,6 +17,72 @@ body {
   margin: 0 auto;
 }
 
+
+.menu {
+  position: absolute;
+  z-index: 99;
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 100%;
+  transition: ease-in-out 300ms;
+  transform: translateX(+100%);
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu--head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu--logo {
+  display: flex;
+  align-items: center;
+  height: 24.85px;
+}
+
+.close--menu--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: initial;
+  padding: 0 6px;
+  border: none;
+  outline: none;
+}
+
+.menu--box {
+  display: flex;
+  align-items: center;
+  padding: 16px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu--icons {
+  margin-right: 12px;
+}
+
+.menu--box--title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+
+
+
 .owl-stage {
   transition: ease-in-out 600ms;
 }
@@ -278,7 +344,7 @@ body {
 
 .app {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 24px 0 14px 0;
+  padding: 24px 0;
 }
 
 .app--inner {
@@ -302,7 +368,7 @@ body {
 
 .apps {
   display: grid;
-  gap: 8px;
+  column-gap: 8px;
   grid-template-columns: repeat(2, 1fr);
 }
 

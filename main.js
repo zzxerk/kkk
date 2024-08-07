@@ -16,3 +16,16 @@ $(".play").on("click", function () {
 $(".stop").on("click", function () {
   owl.trigger("stop.owl.autoplay");
 });
+
+
+const menuBtn = document.querySelector('.menu--btn');
+const menu = document.querySelector('.menu');
+const closeMenuBtn = document.querySelector('.close--menu--btn');
+
+menuBtn.addEventListener('click', function () {
+  menu.classList.add('active');
+})
+
+closeMenuBtn.addEventListener('click', function () {
+  menu.classList.remove('active');
+})
