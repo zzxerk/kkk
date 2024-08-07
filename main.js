@@ -24,8 +24,10 @@ const closeMenuBtn = document.querySelector('.close--menu--btn');
 
 menuBtn.addEventListener('click', function () {
   menu.classList.add('active');
+  document.body.style.overflow = 'hidden';
 })
 
 closeMenuBtn.addEventListener('click', function () {
   menu.classList.remove('active');
+  document.body.style.overflow = 'scroll';
 })
