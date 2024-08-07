@@ -412,3 +412,172 @@ body {
   line-height: 18px;
   color: #fff;
 }
+
+
+
+
+
+/*  */
+
+.film--main {
+  height: 264px;
+}
+
+
+.film--main--img {
+  position: absolute;
+  width: 100%;
+  position: fixed;
+  filter: blur(5px);
+  object-position: 50% 50%;
+  object-fit: cover;
+  z-index: -10;
+  /* background-image: url(https://images.kinomax.ru/350/films/7/7648/p_6d6dea2.ebp); */
+}
+
+.film--main--filter {
+  position: absolute;
+  overflow: hidden;
+  -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, .6)), to(#2a2a2a));
+  background: linear-gradient(180deg, rgba(42, 42, 42, .6), #2a2a2a);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0;
+  z-index: -9;
+  position: relative;
+}
+
+.film--main--age {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 4px;
+}
+
+.film--main--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.film--main--title {
+  word-break: break-word;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.film--main--gener {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(151, 151, 151);
+  margin-bottom: 4px;
+}
+
+.film--main--duration {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(151, 151, 151);
+  margin-bottom: 8px;
+}
+
+.film--main--more {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.film--main--more--text {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #bd257f;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+}
+
+.film--main--online {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 3px 5px;
+  background-color: rgb(151, 151, 151);
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+.film--date {
+  background-color: #2a2a2a;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.film--date--inner {
+  padding-top: 24px;
+  overflow-x: scroll;
+  scrollbar-color:  hsl(0 0% 50%);
+  max-width: 393px;
+}
+
+.film--date--wrapper {
+  width: 1096px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.film--date--inner::-webkit-scrollbar {
+  width: 0;
+}
+
+.film--date--btn {
+  width: 130px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 8px;
+  background-color: initial;
+  outline: none;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.film--date--btn.active {
+  color: #bd257f;
+  background-color: rgba(189, 37, 127, 0.1);
+  border: 1px solid #bd257f;
+}
+
+.date--btn--title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: normal;
+}
+
+.date--btn--text {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: normal;
+}
