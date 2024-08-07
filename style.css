@@ -301,6 +301,7 @@ body {
 
 
 .footer{
+  background-color: #2a2a2a;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding: 24px 0;
 }
@@ -427,7 +428,6 @@ body {
 .film--main--img {
   position: absolute;
   width: 100%;
-  position: fixed;
   filter: blur(5px);
   object-position: 50% 50%;
   object-fit: cover;
@@ -438,7 +438,7 @@ body {
 .film--main--filter {
   position: absolute;
   overflow: hidden;
-  -webkit-gradient(linear, left top, left bottom, from(rgba(42, 42, 42, .6)), to(#2a2a2a));
+  /* -webkit-gradient (linear, left top, left bottom, from(rgba(42, 42, 42, .6)), to(#2a2a2a)); */
   background: linear-gradient(180deg, rgba(42, 42, 42, .6), #2a2a2a);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,4 +581,107 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: normal;
+}
+
+
+.film--place {
+  background-color: #2a2a2a;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 56px;
+}
+
+.film--place--inner {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.film--place--box {
+  display: flex;
+  flex-direction: column;
+}
+
+.place--title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 24px;
+}
+
+.place--info {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(136, 136, 136);
+  margin-bottom: 32px;
+}
+
+.place--time {
+  display: grid;
+  gap: 16px 12px;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.place--time--link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.film--time--box {
+  padding-top: 4px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #fff;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.film--time--box.vip {
+  border: 1px solid rgb(202, 85, 31);
+}
+
+.film--time--box.comfort {
+  border: 1px solid rgb(244, 132, 0);
+}
+
+.time--box--time {
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.time--box--price {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.place--type {
+  font-size: 12px;
+  line-height: 13.2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.place--type.vip {
+  color: rgb(202, 85, 31);
+}
+
+.place--type.comfort {
+  color: rgb(244, 132, 0);
 }
