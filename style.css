@@ -532,7 +532,7 @@ body {
   padding: 24px 0;
   overflow-x: auto;
   max-width: 393px;
-  /* padding-bottom: 4px; */
+  padding-bottom: 4px;
 }
 
 .film--date--wrapper {
