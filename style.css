@@ -532,7 +532,7 @@ body {
   padding: 24px 0;
   overflow-x: auto;
   max-width: 393px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .film--date--wrapper {
@@ -540,6 +540,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-bottom: 4px;
 }
 
 .film--date--inner::-webkit-scrollbar {
@@ -584,17 +585,18 @@ body {
 
 .film--place {
   background-color: #2a2a2a;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 56px;
 }
 
 .film--place--inner {
-  padding-top: 24px;
+  /* padding-top: 24px; */
   display: flex;
   flex-direction: column;
 }
 
 .film--place--box {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
 }
