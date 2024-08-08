@@ -580,7 +580,7 @@ body {
 
 .film--place {
   background-color: #2a2a2a;
-  padding-bottom: 56px;
+  padding-bottom: 24px;
 }
 
 .film--place--inner {
@@ -591,6 +591,7 @@ body {
 
 .film--place--box {
   padding-top: 24px;
+  padding-bottom: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
