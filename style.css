@@ -529,10 +529,10 @@ body {
 }
 
 .film--date--inner {
-  padding: 24px 0;
+  padding: 24px 0 4px 0;
   overflow-x: auto;
   max-width: 393px;
-  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .film--date--wrapper {
@@ -540,11 +540,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-bottom: 4px;
-}
-
-.film--date--inner::-webkit-scrollbar {
-  width: 10px;
 }
 
 .film--date--btn {
