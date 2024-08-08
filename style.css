@@ -681,3 +681,33 @@ body {
 .place--type.comfort {
   color: rgb(244, 132, 0);
 }
+
+.order--head {
+
+}
+
+.order--head--inner {
+  padding: 20px 0 ;
+  display: flex;
+  flex-direction: column;
+}
+
+.order--head--title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin: 8px 0;
+}
+
+.order--head--time {
+  font-size: 16px;
+  color: rgb(136, 136, 136);
+  line-height: 24px;
+}
+
+.order--head--info {
+  font-size: 16px;
+  color: rgb(136, 136, 136);
+  line-height: 24px;
+}
